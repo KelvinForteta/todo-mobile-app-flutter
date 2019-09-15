@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
-class TasksScreen extends StatefulWidget {
-  @override
-  _TasksScreenState createState() => _TasksScreenState();
-}
-
-class _TasksScreenState extends State<TasksScreen> {
+class TaskScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.blueAccent,
+      body: Column(
+        children: <Widget>[
+          Icon(Icons.list),
+          Text('Todoey'),
+        ],
+      ),
+    );
   }
 }
