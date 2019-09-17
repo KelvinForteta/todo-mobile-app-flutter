@@ -7,7 +7,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Todoey',
       debugShowCheckedModeBanner: false,
+      theme: new ThemeData(
+        //  primarySwatch: Colors.teal,
+        canvasColor: Colors.transparent,
+      ),
       home: TasksScreen(),
     );
   }
