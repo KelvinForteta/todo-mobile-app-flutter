@@ -9,11 +9,7 @@ class TasksScreen extends StatefulWidget {
 }
 
 class _TasksScreenState extends State<TasksScreen> {
-  List<Task> tasks = [
-    Task(name: 'Buy milk', isDone: false),
-    Task(name: 'Buy egg', isDone: false),
-    Task(name: 'Buy bread', isDone: true),
-  ];
+  List<Task> tasks = [];
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +24,7 @@ class _TasksScreenState extends State<TasksScreen> {
                     setState(() {
                       tasks.add(Task(name: newTitle));
                     });
+                    Navigator.pop(context);
                   }));
         },
       ),
